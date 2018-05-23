@@ -7,6 +7,6 @@ get '/' do
     unless params[:nombre]
     "hola desconocido" 
     else
-    "hola #{params[:nombre]}"
+    "hola Juan"
     end 
 end
