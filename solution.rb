@@ -4,9 +4,10 @@ require 'sinatra'
 
 
 get '/' do 
-    unless params[:nombre]
+    if params[:nombre] == nil
          "Hola desconocido!"
     else
         "Hola #{params[:nombre]}!"
     end 
+end 
 end
