@@ -7,6 +7,6 @@ get '/' do
     if params[:nombre]
         "Hola #{params[:nombre]}!"
     else
-            "Hola desconocido" 
+         "Hola desconocido!"
     end 
 end
