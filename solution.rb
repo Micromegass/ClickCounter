@@ -4,9 +4,9 @@ require 'sinatra'
 
 
 get '/' do 
-    if params[:nombre]
-        "Hola #{params[:nombre]}!"
-    else
+    unless params[:nombre]
          "Hola desconocido!"
+    else
+        "Hola #{params[:nombre]}!"
     end 
 end
