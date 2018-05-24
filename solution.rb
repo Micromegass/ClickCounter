@@ -1,15 +1,15 @@
 require 'sinatra'
 
 
-
-
-get '/makers/:nombre' do 
-    if params[:nombre] == nil || params[:nombre] == "" || params[:nombre] == []
-               
-     "Hola desconocido!"
-
-    else
-
-    "Hola" + " #{params[:nombre].capitalize}!"
-    end 
+get '/' do 
+    erb :index
 end
+
+
+
+post '/hello' do 
+
+    "Hola #{params[:name]}"
+
+end 
+
