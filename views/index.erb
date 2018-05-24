@@ -1,1 +1,12 @@
-<p>HcUy6Re2LLBRtj </p>
+
+<h1> Hola </h1>
+
+
+<% @array.each do |num| %> <br>
+
+    <% if num.odd? %>
+     <h2> <%= num.to_s + "Soy Impar!"  %> </h2>
+    <% else %>
+    <h2> <%= num.to_s + "Soy Par!"  %> </h2>
+<% end  %>
+<% end  %>

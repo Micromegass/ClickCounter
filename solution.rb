@@ -2,14 +2,10 @@ require 'sinatra'
 
 
 get '/' do 
+
+    @array = num = 1..50
+   
     erb :index
 end
 
-
-
-post '/hello' do 
-
-    "Hola #{params[:name]}"
-
-end 
 
