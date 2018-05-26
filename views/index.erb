@@ -1,12 +1,16 @@
+<%# <form method="post" action="/suma">
+    <input type="hidden" name="num" value="num">
+    <input class='btn btn-primary' name='id' value='num' type='submit' >
+</form> %>
 
-<h1> Hola </h1>
 
 
-<% @array.each do |num| %> <br>
+<h1>Hola </h1>
 
-    <% if num.odd? %>
-     <h2> <%= num.to_s + "Soy Impar!"  %> </h2>
-    <% else %>
-    <h2> <%= num.to_s + "Soy Par!"  %> </h2>
-<% end  %>
-<% end  %>
+     <%= @sum %>
+
+    <form method="post" action="/test">
+     <label> <input type="hidden" name="sum" value="sum" </label>
+    <button type="submit" class="btn btn-success"> count </button>
+    </form>
+
