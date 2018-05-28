@@ -4,8 +4,12 @@
 </form> %>
 
 
-
+<% if @sum %>
 <h1>Mi cuenta es :  <%= @sum %>  </h1>
+<% else  %>
+<h1>Mi cuenta es : 0
+<% @sum == 0 %>
+<% end  %>
 
     
 
