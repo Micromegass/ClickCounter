@@ -9,8 +9,8 @@
 
      <%= @sum %>
 
-    <form method="post" action="/test">
-     <label> <input type="hidden" name="sum" value="sum" </label>
+    <form method="get" action="/">
+     <label> <input type="hidden" name="sum" value="<%= @sum + 1 %> +" </label>
     <button type="submit" class="btn btn-success"> count </button>
     </form>
 
