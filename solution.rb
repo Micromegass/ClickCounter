@@ -1,9 +1,6 @@
 require 'sinatra'
-require 'pry'
-
-
 
 get '/' do    
-    @sum = params[:sum].to_i
+    @sum = params[:sum]
     erb :index
 end
